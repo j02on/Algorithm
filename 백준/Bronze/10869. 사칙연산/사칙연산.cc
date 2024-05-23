@@ -6,10 +6,6 @@ int main()
 	int b = 0;
 	
 	scanf("%d %d", &a, &b);
-	printf("%d\n", a + b);
-	printf("%d\n", a - b);
-	printf("%d\n", a * b);
-	printf("%d\n", a / b);
-	printf("%d\n", a % b);
+	printf("%d\n%d\n%d\n%d\n%d\n", a + b, a - b, a * b, a / b, a % b);
 	return 0;
 }
