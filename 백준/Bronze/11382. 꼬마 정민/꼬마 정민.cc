@@ -1,10 +1,10 @@
 #include <stdio.h>
 
-int main()
+int main ()
 {
-    long long a, b, c;
-    
-    scanf("%lld %lld %lld", &a, &b, &c);
-    printf("%lld", a + b + c);
-    return 0;
+	long a,b,c;
+	
+	scanf("%ld %ld %ld", &a, &b, &c);
+	printf("%ld", a + b + c);
+	return 0;
 }
