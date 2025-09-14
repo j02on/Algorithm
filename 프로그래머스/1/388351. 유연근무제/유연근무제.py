@@ -2,8 +2,9 @@ def solution(schedules, timelogs, startday):
     answer = 0
     n = len(schedules)
     
+    
     for i in range(n):
-        counter = 0
+        count = 0
         day = startday
         for j in range(7):
             if day <= 5:
@@ -18,12 +19,12 @@ def solution(schedules, timelogs, startday):
                 allowed_time = hour * 100 + minute
                 
                 if timelogs[i][j] <= allowed_time:
-                    counter += 1
+                    count += 1
 
             day += 1
             if day > 7:
                 day = 1
 
-        if counter >= 5:
+        if count >= 5:
             answer += 1
     return answer
